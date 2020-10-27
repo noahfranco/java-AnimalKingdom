@@ -29,7 +29,7 @@ public class Main {
     Fish catfish = new Fish("Catfish", 1817);
     Fish perch =  new Fish("Perch", 1758);
 
-    // List the animals on how they move. Only need three based on the three animal types
+    // List the animals on how they move
     // First pass solution:
     // Mammals move
     panda.setMove("Walk");
@@ -52,8 +52,34 @@ public class Main {
     catfish.setMove("Swim");
     perch.setMove("Swim");
 
+    // List the animals on how they breath
+    // Mammals breath
+    panda.setBreath("Lungs");
+    zebra.setBreath("Lungs");
+    koala.setBreath("Lungs");
+    sloth.setBreath("Lungs");
+    armadillo.setBreath("Lungs");
+    raccoon.setBreath("Lungs");
+    bigfoot.setBreath("Lungs");
 
-    // Create ArrayList
+    // Birds breath
+    pigeon.setBreath("Lungs");
+    peacock.setBreath("Lungs");
+    toucan.setBreath("Lungs");
+    parrot.setBreath("Lungs");
+    swan.setBreath("Lungs");
+
+    // Fish breath
+    salmon.setBreath("Gills");
+    catfish.setBreath("Gills");
+    perch.setBreath("Gills");
+
+    System.out.println();
+    System.out.println(panda.getBreath());
+    System.out.println(pigeon.getBreath());
+    System.out.println(salmon.getBreath());
+
+        // Create ArrayList
     List<Animal> animals = new ArrayList<>();
     // Mammals
     animals.add(panda);
