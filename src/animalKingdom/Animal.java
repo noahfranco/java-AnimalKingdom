@@ -22,13 +22,31 @@ abstract class Animal {
     abstract String getName();
 
 
-// setting and getting how the animal will move
+    // setting and getting how the animals move
    void setMove(String move) {
        this.move = move;
    }
 
     String getMove() {
         return move;
+    }
+
+    // setting and getting how the animals breath
+    void setBreath(String breath) {
+       this.breath = breath;
+    }
+
+    String getBreath() {
+       return breath;
+    }
+
+    // setting and getting how the animals reproduce
+    void setReproduce(String reproduce) {
+       this.reproduce = reproduce;
+    }
+
+    String getReproduce() {
+       return reproduce;
     }
 
 
