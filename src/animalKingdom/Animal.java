@@ -2,9 +2,9 @@ package animalKingdom;
 
 abstract class Animal {
     // comeback and make make it work without static since using static on a protected object is bad practice
-    protected static String move;
-    protected static String breath;
-    protected static String reproduce;
+    protected String move;
+    protected String breath;
+    protected String reproduce;
 
     // supertype constructor
     public Animal() {
@@ -17,9 +17,19 @@ abstract class Animal {
         this.reproduce = reproduce;
     }
 
-    // declaring getters at parent and will implement the methoed in the children classess
-    abstract String getBreath();
-    abstract String getMove();
-    abstract String getReproduce();
+    // needs this abstract methoed to access methoed from Mammals at parent Animal
+    abstract int getYear();
+    abstract String getName();
+
+
+// setting and getting how the animal will move
+   void setMove(String move) {
+       this.move = move;
+   }
+
+    String getMove() {
+        return move;
+    }
+
 
 }
